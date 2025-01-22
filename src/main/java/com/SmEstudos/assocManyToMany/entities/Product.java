@@ -28,6 +28,9 @@ public class Product {
 		inverseJoinColumns = @JoinColumn(name = "category_id"))
 	private Set<Category> categories = new HashSet<>();
 
+	public Product() {
+	}
+
 	public Product(Long id, String name, Double price) {
 		this.id = id;
 		this.name = name;
@@ -49,5 +52,23 @@ public class Product {
 	public Set<Category> getCategories() {
 		return categories;
 	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
+	public void setCategories(Set<Category> categories) {
+		this.categories = categories;
+	}
+	
+	
 		
 }
