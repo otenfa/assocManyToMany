@@ -1,13 +1,21 @@
 package com.SmEstudos.assocManyToMany;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AssocManyToManyApplication {
+public class AssocManyToManyApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AssocManyToManyApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+
+		System.out.println("Passos iniciais do projeto concluído!");
+		
 	}
 
 }
